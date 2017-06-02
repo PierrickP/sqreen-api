@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- '6'
+- '7'
+notifications:
+  email: false
+env:
+  global:
+  - secure: Jfcpiiz7+Gqg6rMnmHQQ34qMWJbYV5k81DpDXCswrgnLg5Zq4hIRH7uCEqEC2cOhBhBE/1ffAcAodRK3idFscuteJwdVRCwDLZ/Pal3TCSIn9E2Y8VBfa52jdTic0sLuy8oz4EzGauNOeZwlC4GhrrrHNB5HvqGtsim6qtvN0PkZwE0dQy0LMOpkaGGlJjM2x7Mvp6sMEIhXKtPJZlbJKZ+xnJb+IwkqvsxAE/ag5Xu5bpq8vOSBX5oL+BfNU4lbUtuv+CyIii92G2bMZ4EqQ58vxmiHFNKDzCQONbn+SXUR7hlgMJP7ltIb3bW1Y6ZVQA/Qs1wmvaR7XFOmyIEPCZawxCRgJUaejm70TbIc1+4ZQFNn2ygdu6YIOXJY1v8nW/or9c9UMb3nLxUvZRgA5gzhIHM3tPGqQLKWGqfjV71pS1A9A9QFUWnO7GfBuzKE0Bza7WN3o7ZWOPJextxaJ6dLQ/YIwECohmn9SkS3ydDVq40fCzPKt7cHtOLHQZ/J6MI2f2QzoS/Gr0cGaD2O8eNe47sjPl1NZZlWW6tRGaY9yiaG7HlfJ1kJOiYYk4EUsHXclu/vEkm0HF9N97z5hgMJ2TyrLqihSTGHQUn7XNaB826N+w3UfWIKmhKjYZZBWA2dvp3JSQ4fy7Xt+OVg7rbdg2ENSLpt/DYQBvDmGgc=
+  - GIT_DEPLOY_REPO=https://$GH_TOKEN@github.com/PierrickP/sqreen-api.git
+before_install:
+- export TZ=Europe/Berlin
+deploy:
+- provider: npm
+  email: mulotmail@gmail.com
+  api_key:
+    secure: FPj38o+Rvpk/f/0MUNLSYztg4rfOAWJqtpFeAL5Ebp7DZqFGRRzK+EzEq3knecoRyV9zqMw52LY1bZgvXv8zLN8Htfq5836sftltUWTYdDgeMkUq5yDz4XO1gCeNdb+n0byf2CE7dk1KKYzUIOmd+ZGqM3dCcrgooh3hj+1SoCpXReXVa4iVPUNBra0dGBfQH5esB8OlUe6NhOJ9b7fDS3nfTEvT2tiNR8iLM6qvKhwWIv2udXh5W8JMVJx4BJm5Wp0rr+wjSSeutPSGITF4pfz6b0/YlE5DvfOJU7oGxKB58yXLfNb1XDW9zy5/0nr9aH/OYxVn3lKKmkZ+7KQxIaZamJVfn1mTDM4XBjhnzMWcrmcIoogtK9GMjQjmdHqAo+/tNHfEvdtfCAEvM+r6unauEsRtvIYLXg3cqv1oDY0W2rcyWu9cNW+caUbcJqlY5xJF21saEj7kS25T77yUcvvQ6QCW7xmyFd5cy7BYPl5F3os+yj+yrPslt+90cr2RaeX0GG7mi1OroyWa2xHfbRcADYTslHuYqdOt8V70o9D2M1Q9gvM8szRcfds0Rrw4rG05I3/AnjZIS49jYYhDyoBN5RGO9NBc4jV5t/+VvY0koClFcX/7evUVvhkrddFero3V38i55RIk8TgPzpddoxXKc7wLMb/t6g3rqJ/j/J4=
+  skip_cleanup: true
+  on:
+    branch: master
+    node: '6'
