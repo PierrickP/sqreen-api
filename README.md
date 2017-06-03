@@ -69,5 +69,5 @@ sqreenApi.ip('8.8.8.8')
 
 ## Background
 
-This node.js module is not maintened by Sqreen.io
+This node.js module is not maintened by Sqreen.io.
 @vdeturckheim forced me to do that repo :stuck_out_tongue:
