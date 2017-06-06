@@ -1,6 +1,6 @@
 {
   "name": "sqreen-api",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "description": "A node.js client for Sqreen API (https://www.sqreen.io/developers.html)",
   "keywords": [
     "sqreen",

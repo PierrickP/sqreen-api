@@ -1,4 +1,4 @@
-import SqreenApi from '../lib/sqreenApi';
+import SqreenApi from '../lib/sqreenApi'; // eslint-disable-line import/default
 import Client from '../lib/client';
 
 import {expect} from 'chai';
